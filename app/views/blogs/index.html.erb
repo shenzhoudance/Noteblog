@@ -1,1 +1,19 @@
 <h1>Hello Word</h1>
+
+<div class="pull-right">
+  <%= link_to("Add a blog", new_blog_path, :class => "btn btn-default") %>
+</div>
+
+<table class="talbe talbe-boldered">
+  <% @blogs.each do |blog| %>
+  <tr>
+    <td> <%= link_to(blog.title, blog_path(blog)) %></td>
+    <td><%= blog.description %></td>
+    <td><%= blog.created_at %></td>
+    <td>
+      <%= link_to("Edit", edit_blog_path(blog)) %>
+      <%= link_to("delete", blog_path(blog), :method => :delete, :data => { :confirm => "Are you sure?"}) %>
+    </td>
+  </tr>
+  <% end %>
+</table>
