@@ -2,7 +2,7 @@
 <%= @post.created_at.strftime('%A, %B %d') %>
 <br>
 <div class="container">
-  <%= simple_format @post.content %>
+  <%= markdown @post.content %>
 
 </div>
 <br>
