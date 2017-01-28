@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :blogs
   resources :posts
-  root 'blogs#index'
+  root 'posts#index'
 end
