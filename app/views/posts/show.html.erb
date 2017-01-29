@@ -1,23 +1,12 @@
-<h1 id="page_title">这里是放文章的页面</h1>
-<div id="posts_wrapper" class="skinny_wrapper">
-  <div class="post">
-    <p class="date"><%= @post.created_at.strftime('%A, %B %d') %></p>
-    <h2><%= @post.title %></h2>
-    <hr>
-  </div>
-  <div id="content">
-     <%= markdown @post.content %>
-
-  </div>
-
-</div>
-
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
   <header>
     <p class="date"><%= @post.created_at.strftime('%A, %B %d') %></p>
     <h1> <%= @post.title %></h1>
     <hr>
   </header>
+  <div id="content">
+    <%= markdown @post.content %>
+  </div>
 </div>
 
 <br>

@@ -89,6 +89,14 @@ p, ul, ol {
 pre {
   border: 0px;
 }
+hr{
+  width: 2.8em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid $highlight;
+  margin: 2rem 0;
+}
 #main_navigation{
   padding: 1em 5%;
   border-bottom: 1px solid $border;
@@ -147,5 +155,3 @@ pre {
     }
   }
 }
-
-@import "post_show";
