@@ -34,17 +34,23 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'font-awesome-sass', '~> 4.7.0'
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+end
+
+group :development do
+  gem "capistrano", "~> 3.4"
+  gem "capistrano-rvm"
+  gem "capistrano-rails"
+end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
