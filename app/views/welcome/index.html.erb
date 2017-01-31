@@ -1,35 +1,33 @@
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-1 about homepage_content">
-    <h2>更新日志／Redmine</h2>
+    <h2>About</h2>
     <hr>
-    <p>本书作者斋藤孝，1960年出生于日本静冈县。
-      毕业于东京大学法学部，并在该大学研究生院教
-      育学研究科修完博士课程，
+    <p>有个故事，说国王决定处死一个犯人，而该犯人对国王说，
+      “陛下，我有一项神奇的能力，就是在一年内，教会您的马飞翔。
+      ”国王将信将疑，但还是想试试，就把马厩总管的职位暂时给了他。
+      结果这家伙每天是吃喝玩乐，纵马驰骋。</a>
+
+      <p>有个小弟偷偷问他，
+      “一年后国王就要砍你头了，你不担心么？”他回答道：
+      “哦，不担心，还一年哪，没准一年内国王出意外死了，
+      也没准一年内我喝酒醉死了，再说还有万一呢——哪匹马
+      突然自己就会飞了呐？
       </p>
-      <p>现为日本明治大学文
-      学部教授，也是一名教育学者，在教育学方面上
-      有着自己独到的见解。主要著作有《读书的力量》
-      《提问力》《规划力》等。<a href="#">查看更多</a>
-</p>
+
+      <p>「欢迎来到盲目乐观者的领地」</p>
   </div>
   <div class="col-2 homepage_content">
     <h2>技术文章</h2>
     <hr>
-    <h3><a href="#">如何学习jQurey</a></h3>
-    <p class="date"> Thursday, January 26</p>
-    <h3><a href="#">写前端的若干方法</a></h3>
-    <p class="date">Thursday, January 26</p>
-    <h3><a href="#">测试小套路</a></h3>
-    <p class="date">Thursday, January 26</p>
+    <% @posts.each do |post| %>
+    <h3><%= link_to(post.title, post_path(post)) %></h3>
+    <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+    <% end %>
   </div>
   <div class="col-3 homepage_content">
     <h2>项目资料</h2>
     <hr>
-    <h3><a href="#">jQurey小功能</a></h3>
+    <h3><a href="#">暂时无文章</a></h3>
     <p class="date"> Thursday, January 26</p>
-    <h3><a href="#">前端设计图</a></h3>
-    <p class="date">Thursday, January 26</p>
-    <h3>测试小套路</a></h3>
-    <p class="date">Thursday, January 26</p>
   </div>
 </div>
