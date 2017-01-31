@@ -9,12 +9,12 @@
   </head>
 
   <body>
-  <div class="body-height">
+    <div id="no_width_padding" class="container-fluid">
     <%= render "common/navbar" %>
 
       <%= yield %>
-    </div>
-    <%= render "common/footer" %>
 
+    <%= render "common/footer" %>
+  </div>
   </body>
 </html>
