@@ -9,7 +9,8 @@
       <%#= link_to("注册", new_user_registration_path) %>
       <%= link_to("管理登入", new_user_session_path) %>
     <% else %>
-      Hi! Zeng.
+    Hi! Zeng.
+      <%= link_to("写文章", new_post_path) %>
       <%= link_to("登出", destroy_user_session_path, method: :delete) %>
     <% end %>
   </nav>

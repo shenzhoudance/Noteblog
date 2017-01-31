@@ -7,9 +7,10 @@
   <div id="content">
     <%= markdown @post.content %>
   </div>
+  <br>
+  <br>
+  <% if current_user %>
+    <%= link_to "编辑", edit_post_path(@post), class: "btn btn-default" %>
+    <%= link_to "删除", post_path(@post), class: "btn btn-default", method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
+  <% end %>
 </div>
-
-<br>
-<br>
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
