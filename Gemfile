@@ -40,7 +40,7 @@ gem 'simple_form'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'font-awesome-sass', '~> 4.7.0'
-
+gem "will_paginate"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
