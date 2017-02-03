@@ -33,6 +33,7 @@ html,body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .skinny_wrapper {
@@ -105,8 +106,8 @@ hr{
 }
 .container-fluid{
   min-height:100%;
-  height: auto !important;
-  height: 100%;
+  // height: auto !important;
+  // height: 100%;
   position: relative;
 }
 #main_navigation{
