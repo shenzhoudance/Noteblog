@@ -3,7 +3,13 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
-    @posts = Post.recent
+    @category_id = Category.find_by(name: params[:category]).id
+    @posts = Post.where(category_id: @category_id).recent
+
+  end
+
+  def import
+    @category_id = 1
   end
 
   def new
@@ -42,7 +48,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :category_id)
   end
 
   def find_post

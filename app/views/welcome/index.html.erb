@@ -19,15 +19,25 @@
   <div class="col-2 homepage_content">
     <h2>提取输出</h2>
     <hr>
-    <% @posts.each do |post| %>
-    <h3><%= link_to(post.title, post_path(post)) %></h3>
-    <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+    <% if @categroy_id = 1 %>
+      <% @posts = Post.find(1) do |post| %>
+        <h3><%= link_to(post.title, post_path(post)) %></h3>
+        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+      <% end %>
+    <%# else %>
+      暂无文章
     <% end %>
   </div>
   <div class="col-3 homepage_content">
     <h2>输入储存</h2>
     <hr>
-    <h3><a href="#">YC</a></h3>
-    <p class="date"> Thursday, January 26</p>
+    <% if @categroy_id = 2 %>
+      <% @posts = Post.find_by(2) do |post| %>
+        <h3><%= link_to(post.title, post_path(post)) %></h3>
+        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+      <% end %>
+    <%# else %>
+      暂无文章
+    <% end %>
   </div>
 </div>
