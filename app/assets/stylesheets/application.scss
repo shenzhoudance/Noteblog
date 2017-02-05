@@ -40,6 +40,9 @@ html,body {
   width: 80%;
   max-width: 760px;
   margin: 0 auto;
+  label {
+    margin-left: 10px;
+  }
 }
 
 .wrapper_padding {

@@ -12,33 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20170204084942) do
 
-  create_table "categories", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "orids", force: :cascade do |t|
-    t.string   "title"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-    t.text     "orid_objective_remember"
-    t.text     "orid_objective_done"
-    t.text     "orid_reflective_feel"
-    t.text     "orid_reflective_top"
-    t.text     "orid_reflective_down"
-    t.text     "orid_interpretive_learn"
-    t.text     "orid_interpretive_understand"
-    t.text     "orid_decisional_describe"
-    t.text     "orid_decisional_improve"
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.integer  "category_id"
     t.string   "category_name"
   end
 
