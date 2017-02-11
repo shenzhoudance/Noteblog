@@ -19,16 +19,20 @@
   <div class="col-2 homepage_content">
     <h2>提取输出</h2>
     <hr>
-    <% @posts.each do |post| %>
-    <h3><%= link_to(post.title, post_path(post)) %></h3>
-    <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-    <% end %>
+
+      <% @posts_import.each do |post| %>
+        <h3><%= link_to(post.title, post_path(post)) %></h3>
+        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+      <% end %>
+
   </div>
   <div class="col-3 homepage_content">
     <h2>输入储存</h2>
     <hr>
-    <h3><a href="#">YC</a></h3>
-    <p class="date"> Thursday, January 26</p>
+    <% @posts_export.each do |post| %>
+      <h3><%= link_to(post.title, post_path(post)) %></h3>
+      <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+    <% end %>
   </div>
   <br>
 </div>
