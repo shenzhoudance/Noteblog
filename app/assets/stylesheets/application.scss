@@ -114,6 +114,9 @@ hr{
   position: relative;
 }
 #main_navigation{
+  position: fixed;
+	width:100%;
+  background-color: white;
   padding: 1em 5%;
   border-bottom: 1px solid $border;
   .name {
