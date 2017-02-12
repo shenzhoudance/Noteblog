@@ -47,6 +47,7 @@ html,body {
 
 .wrapper_padding {
   padding: 4rem 0;
+  padding-bottom: 100px;
 }
 .clearfix:before,
 .clearfix:after {
@@ -114,6 +115,9 @@ hr{
   position: relative;
 }
 #main_navigation{
+  position: fixed;
+	width:100%;
+  background-color: white;
   padding: 1em 5%;
   border-bottom: 1px solid $border;
   .name {
@@ -158,6 +162,7 @@ hr{
   width: 100%;
   clear:both;
   padding: 1.8em 5%;
+
   margin-bottom: 10px;
   border-top: 1px solid $border;
   .copyright {

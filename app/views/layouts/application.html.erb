@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>曾铮</title>
+    <title>ZENG</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,10 +11,11 @@
   <body>
     <div id="no_width_padding" class="container-fluid">
     <%= render "common/navbar" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
       <%= yield %>
-
     <%= render "common/footer" %>
   </div>
-  </body>
+</body>
 </html>

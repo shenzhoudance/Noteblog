@@ -1,12 +1,24 @@
-<h1 id="page_title">据说程序员的前世是魔法师</h1>
-<div id="posts_wrapper" class="skinny_wrapper">
-  <% @posts.each do |post| %>
-  <div class="post">
-    <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-    <h2><%= link_to(post.title, post_path(post)) %></h2>
-    <hr>
-    <p><%= markdown post.content %></p>
+<div class="content">
+  <div class="left-sidebar">
+      <ul>
+        <li> <%= link_to "All Articles", posts_path %></li>
+        <% Category.all.each do |category| %>
+        <li><%= link_to category.name, posts_path(category: category.name) %></li>
+        <% end %>
+      </ul>
+
   </div>
-  <br>
-  <% end %>
+  <div class="right-body">
+    <div id="posts_wrapper" class="skinny_wrapper">
+      <% @posts.each do |post| %>
+      <div class="post">
+        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+        <h2><%= link_to(post.title, post_path(post)) %></h2>
+        <hr>
+        <p><%= markdown post.content %></p>
+      </div>
+      <br>
+      <% end %>
+    </div>
+  </div>
 </div>

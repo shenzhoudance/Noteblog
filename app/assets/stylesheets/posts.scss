@@ -5,8 +5,32 @@
 
 @import "application";
 
+.content{
+  // padding: 1em 5%;
+  width: 100%;
+  height: 100%;
+
+  .left-sidebar{
+    padding: 3em 4%;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  .right-body{
+    // border-left: 1px solid $border;
+    width: 80%;
+    float: right;
+    padding: 0 2.5%;
+  }
+}
+
+
+
+
 #posts_wrapper {
   padding: 3em 0;
+  padding-bottom: 100px;
   .post {
     .date {
       font-size: .9em;
