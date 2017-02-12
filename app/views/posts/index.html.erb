@@ -1,4 +1,7 @@
 <h1 id="page_title">据说程序员的前世是魔法师</h1>
+<% Category.all.each do |category| %>
+  <%= link_to category.name, posts_path(category: category.name) %>
+<% end %>
 <div id="posts_wrapper" class="skinny_wrapper">
   <% @posts.each do |post| %>
   <div class="post">
