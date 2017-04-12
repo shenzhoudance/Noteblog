@@ -1,13 +1,12 @@
 <div class="content">
-  <div class="left-sidebar">
-      <ul>
-        <li> <%= link_to "All Articles", posts_path %></li>
-        <% Category.all.each do |category| %>
-        <li><%= link_to category.name, posts_path(category: category.name) %></li>
-        <% end %>
-      </ul>
-
-  </div>
+  <!-- <div class="left-sidebar">
+      <ul> -->
+        <!-- <li> <%= link_to "All Articles", posts_path %></li> -->
+        <!-- <% Category.all.each do |category| %> -->
+        <!-- <li><%= link_to category.name, posts_path(category: category.name) %></li> -->
+        <!-- <% end %> -->
+      <!-- </ul>
+  </div> -->
   <div class="right-body">
     <div id="posts_wrapper" class="skinny_wrapper">
       <% @posts.each do |post| %>
