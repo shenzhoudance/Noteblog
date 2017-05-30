@@ -34,6 +34,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem "poloniex", :git => "https://github.com/developerby/poloniex.git"
+gem "google_currency"
+
+gem "peatio_client"
+gem "json"
+gem "money"
+
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
