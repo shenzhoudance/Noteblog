@@ -3,12 +3,7 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
-    if params[:category].blank?
-      @posts = Post.recent
-    else
-      @category_id = Category.find_by(name: params[:category]).id
-      @posts = Post.where(category_id: @category_id).recent
-    end
+    @posts = Post.all
   end
 
   def new
@@ -47,7 +42,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :category_id, :category_name)
+    params.require(:post).permit(:title, :content)
   end
 
   def find_post
