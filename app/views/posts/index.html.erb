@@ -1,0 +1,15 @@
+<div class="content">
+  <div class="right-body">
+    <div id="posts_wrapper" class="skinny_wrapper">
+      <% @posts.each do |post| %>
+      <div class="post">
+        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+        <h2><%= link_to(post.title, post_path(post)) %></h2>
+        <hr>
+        <p><%= markdown post.content %></p>
+      </div>
+      <br>
+      <% end %>
+    </div>
+  </div>
+</div>

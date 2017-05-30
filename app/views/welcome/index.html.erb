@@ -1,0 +1,38 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>学习 & 工作流水账</h2>
+    <hr>
+    <p>有个故事，说国王决定处死一个犯人，而该犯人对国王说，
+      “陛下，我有一项神奇的能力，就是在一年内，教会您的马飞翔。
+      ”国王将信将疑，但还是想试试，就把马厩总管的职位暂时给了他。
+      结果这家伙每天是吃喝玩乐，纵马驰骋。</a>
+
+      <p>有个小弟偷偷问他，
+      “一年后国王就要砍你头了，你不担心么？”他回答道：
+      “哦，不担心，还一年哪，没准一年内国王出意外死了，
+      也没准一年内我喝酒醉死了，再说还有万一呢——哪匹马
+      突然自己就会飞了呐？
+      </p>
+
+      <p>「欢迎来到盲目乐观者的领地」</p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>提取输出</h2>
+    <hr>
+
+      <% @posts_import.each do |post| %>
+        <h3><%= link_to(post.title, post_path(post)) %></h3>
+        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+      <% end %>
+
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>输入储存</h2>
+    <hr>
+    <% @posts_export.each do |post| %>
+      <h3><%= link_to(post.title, post_path(post)) %></h3>
+      <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
+    <% end %>
+  </div>
+  <br>
+</div>
