@@ -3,8 +3,8 @@
     <i class="fa fa-circle-o-notch" aria-hidden="true"></i> ZENG 的笔记本
   <% end %>
   <nav>
-    <%= link_to("技术文章", posts_path) %>
-    <a href="">参考资料</a>
+    <%#= link_to("技术文章", posts_path) %>
+    <a href="http://dasredmine.herokuapp.com" target="_blank">REDMINE</a>
     <% if !current_user %>
       <%#= link_to("注册", new_user_registration_path) %>
       <%= link_to("管理登入", new_user_session_path) %>
