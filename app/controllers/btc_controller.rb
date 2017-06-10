@@ -4,7 +4,6 @@ class BtcController < ApplicationController
     @usdt_btc = Poloniex::Market.by_pair("USDT_BTC").last.to_f * Money.default_bank.get_rate('USD', 'CNY').to_f
     @usdt_eth = Poloniex::Market.by_pair("USDT_ETH").last.to_f * Money.default_bank.get_rate('USD', 'CNY').to_f
     @usdt_sc = Poloniex::Market.by_pair("BTC_SC").last.to_f * Poloniex::Market.by_pair("USDT_BTC").last.to_f * Money.default_bank.get_rate('USD', 'CNY').to_f
-    @usdt_dgb = Poloniex::Market.by_pair("BTC_DGB").last.to_f * Poloniex::Market.by_pair("USDT_BTC").last.to_f * Money.default_bank.get_rate('USD', 'CNY').to_f
     @usdt_zec = Poloniex::Market.by_pair("BTC_ZEC").last.to_f * Poloniex::Market.by_pair("USDT_BTC").last.to_f * Money.default_bank.get_rate('USD', 'CNY').to_f
     @exchange_rate = Money.default_bank.get_rate('USD', 'CNY').to_f
 
