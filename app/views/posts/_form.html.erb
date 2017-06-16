@@ -9,18 +9,9 @@
   <% end %>
 
   <%= f.input :title %>
-
-<%#= f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a Category"} %>
-  <!-- <br>
-  <br> -->
-
-  <%#= f.input :category_name,label: "import", as: :radio_buttons %>
-  <!-- <%= f.input :category_name %> -->
 <div class="content_input">
   <%= f.input :content, label: "Write your article here", input_html: { class: "form-control"}%>
 </div>
-<%#= f.collection_radio_buttons :category_name, [['import', 'import'] ,['export', 'export']], :first, :last %>
-
   <br>
   <%= f.submit "Submit", class: "btn btn-default", data: { disable_with: "Submitting..." } %>
   <% end %>

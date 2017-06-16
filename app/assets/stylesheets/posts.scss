@@ -3,79 +3,59 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-@import "application";
+@import "bootstrap-setting";
 
-.content{
-  // padding: 1em 5%;
-  width: 100%;
-  height: 100%;
-
-  .left-sidebar{
-    padding: 3em 4%;
-    position: fixed;
-    width: 20%;
-    height: 100%;
-    float: left;
+.posts-controller{
+  h1, h2, h3, h4, h5, h6, p, ul, li {
+    color: $dark;
   }
-  .right-body{
-    // border-left: 1px solid $border;
-    width: 100%;
-    // float: right;
-    padding: 0 2.5%;
+
+  h1 {
+    font-size: 2.5rem;
   }
-}
 
-
-
-
-#posts_wrapper {
-  padding: 3em 0;
-  padding-bottom: 100px;
-  .post {
-    .date {
-      font-size: .9em;
-      text-align: center;
-      margin: 0;
+  h2 {
+    // font-size: 2rem;
+    a {
+      color: $dark;
+      text-decoration: none;
     }
-    h2 {
-      margin: 0;
-      text-align: center;
-      font-size: 2em;
-      text-transform: uppercase;
-      a {
-        text-decoration: none;
-        color: $dark;
-        &:hover {
-          color: $highlight;
-        }
-      }
+    a:hover{
+      color: $highlight;
     }
-    hr {
-      margin: 2em auto;
-    }
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.375rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p, li {
+    font-size: 1.25rem;
+    line-height: 1.75;
+  }
+  p, ul, ol {
+    margin: 0 0 1.6em 0;
+  }
+  pre {
+    border: 0px;
   }
 }
 
-#post_show_content {
-  header {
-    text-align: center;
-    .date {
-      font-size: .9em;
-      color: $light;
-      margin: 0;
-    }
-    h1 {
-      margin: 0
-    }
-    hr {
-      margin: 2em auto;
-    }
-  }
-}
-
-
-.content_input {
-  #post_content{
-    min-height: 500px;
-  }
+hr.small{
+  max-width: 40px;
+  margin: 15px auto;
+  border-width: 2px;
+  border-color: $highlight;
 }

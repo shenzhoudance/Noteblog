@@ -1,13 +1,11 @@
-<div class="content">
-  <div class="right-body">
-    <div id="posts_wrapper" class="skinny_wrapper">
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
       <% @posts.each do |post| %>
-      <div class="post">
-        <p class="date"><%= post.created_at.strftime('%A, %B %d') %></p>
-        <h2><%= link_to(post.title, post_path(post)) %></h2>
-        <hr>
+        <p class="date text-center"><%= post.created_at.strftime('%A, %B %d') %></p>
+        <h2 class="text-center"><%= link_to(post.title, post_path(post)) %></h2>
+        <hr class="small">
         <p><%= markdown post.content %></p>
-      </div>
       <br>
       <% end %>
     </div>
