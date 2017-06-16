@@ -7,13 +7,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+  <body class="posts-controller">
     <%= render "common/navbar" %>
-
+    <div class="content">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div class="posts-controller index-action">
       <%= yield %>
     </div>
     <%= render "common/footer" %>
