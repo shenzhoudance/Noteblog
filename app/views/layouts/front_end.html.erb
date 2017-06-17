@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ZENG</title>
+    <title>ZENG-Front end template</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
   <body>
-    <div class="posts-controller">
-        <%= render "common/navbar" %>
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-          <%= yield %>
-        <%= render "common/footer" %>
-    </div>
-</body>
+    <%= yield %>
+  </body>
 </html>

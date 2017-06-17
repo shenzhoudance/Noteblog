@@ -1,17 +1,37 @@
-<header id="main_navigation" class="clearfix">
-  <%= link_to(root_path, class: "name") do %>
-    <i class="fa fa-circle-o-notch" aria-hidden="true"></i> ZENG 的笔记本
-  <% end %>
-  <nav>
-    <%#= link_to("BTC & ETH", btc_index_path) %>
-    <a href="http://dasredmine.herokuapp.com" target="_blank">REDMINE</a>
-    <% if !current_user %>
-      <%#= link_to("注册", new_user_registration_path) %>
-      <%= link_to("管理登入", new_user_session_path) %>
-    <% else %>
-    Hi! Zeng.
-      <%= link_to("写文章", new_post_path) %>
-      <%= link_to("登出", destroy_user_session_path, method: :delete) %>
-    <% end %>
-  </nav>
-</header>
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+  <div class="container">
+
+<!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to(root_path, class: "navbar-brand") do %>
+        <i class="fa fa-circle-o-notch" aria-hidden="true"></i> AZIZI BLOG
+      <% end %>
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to("BTC & ETH", btc_index_path) %>
+        </li>
+        <li>
+          <a href="http://dasredmine.herokuapp.com" target="_blank">REDMINE</a>
+        </li>
+        <% if !current_user %>
+          <li><%= link_to("管理登入", new_user_session_path) %></li>
+        <% else %>
+          <li><%= link_to("Hi! Zeng.写文章", new_post_path) %></li>
+          <li><%= link_to("登出", destroy_user_session_path, method: :delete) %></li>
+        <% end %>
+      </ul>
+    </div>
+<!-- /.navbar-collapse -->
+  </div>
+<!-- /.container -->
+</nav>

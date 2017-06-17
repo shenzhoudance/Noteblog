@@ -1,25 +1,39 @@
-<div class="container-fluid">
-  <div class="btc-page">
-    <br>
-    Poloniex比特币价格：¥ <%= @usdt_btc %>
-    <br>
-    云币网比特币价格：¥ <%= @btc_yunbi %>
-    <br>
-    <br>
-    Poloniex以太坊价格：¥ <%= @usdt_eth %>
-    <br>
-    云币网以太坊价格：¥ <%= @eth_yunbi %>
-    <br>
-    <br>
-    Poloniex SC价格：¥ <%= @usdt_sc %>
-    <br>
-    云币网 SC价格：¥ <%= @sc_yunbi %>
-    <br>
-    <br>
-    Poloniex ZEC价格：¥ <%= @usdt_zec %>
-    <br>
-    云币网 ZEC价格：¥ <%= @zec_yunbi %>
-    <br>
+<div class="container">
+  <br>
+  <br>
+  <table class="table table-bordered table-hover table-striped">
+    <thead>
+      <tr>
+        <th>COIN</th>
+        <th>云币网（¥）</th>
+        <th>Poloniex（¥）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BTC</td>
+        <td><%= @btc_yunbi %></td>
+        <td><%= @usdt_btc %></td>
+      </tr>
+      <tr>
+        <td>ETH</td>
+        <td><%= @eth_yunbi %></td>
+        <td><%= @usdt_eth %></td>
+      </tr>
+      <tr>
+        <td>ZEC</td>
+        <td><%= @zec_yunbi %></td>
+        <td><%= @usdt_zec %></td>
+      </tr>
+      <tr>
+        <td>SC</td>
+        <td><%= @sc_yunbi %></td>
+        <td><%= @usdt_sc %></td>
+      </tr>
+
+    </tbody>
+  </table>
+
     <%#= @exchange_rate %>
-  </div>
+
 </div>
