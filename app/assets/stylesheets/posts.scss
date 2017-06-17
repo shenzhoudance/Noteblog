@@ -11,6 +11,7 @@
   min-height: 100%;
   /* 位置設為relative, 作為footer區塊位置的參考 */
   position: relative;
+  padding-bottom: 100px;
 
 // posts 全局
   h1, h2, p, ul, li {
@@ -44,6 +45,28 @@
     border-color: $highlight;
   }
 
+  .navbar-default{
+    height: 60px;
+    padding-top: 5px;
+    background-color: white;
+    i{
+      color: $highlight;
+    }
+    a{
+      color: $dark;
+    }
+    .navbar-nav,{
+      li{
+         a{
+          color: $dark;
+        }
+        a:hover{
+          color: $highlight;
+        }
+      }
+    }
+  }
+
 // index page
   p.date{
     margin-top: 30px;
@@ -61,8 +84,23 @@
   }
 }
 
+
+
 footer{
   /* 設定footer絕對位置在底部 */
   position: absolute;
   bottom: 0;
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 20px;
+  border-top: 1px solid $border;
+  .footer-icon{
+    i{
+      font-size: 16px;
+      color: $dark;
+      }
+    i:hover{
+      color: $highlight;
+    }
+  }
 }
