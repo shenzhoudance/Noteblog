@@ -5,12 +5,14 @@
 
 @import "bootstrap-setting";
 
-body.posts-controller{
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
 
-  // posts 全局
+.posts-controller{
+  /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+  min-height: 100%;
+  /* 位置設為relative, 作為footer區塊位置的參考 */
+  position: relative;
 
+// posts 全局
   h1, h2, p, ul, li {
     color: $dark;
   }
@@ -42,17 +44,7 @@ body.posts-controller{
     border-color: $highlight;
   }
 
-  .content{
-    min-height: 100%;
-    position: relative;
-  }
-
-  footer{
-    position: absolute;
-    height: 40px;
-  }
-
-  // index
+// index page
   p.date{
     margin-top: 30px;
     margin-bottom: 5px;
@@ -62,9 +54,15 @@ body.posts-controller{
     margin-top: 0px;
   }
 
-  // show
+// show page
   .handle{
     width: 112px;
     margin: 10px auto;
   }
+}
+
+footer{
+  /* 設定footer絕對位置在底部 */
+  position: absolute;
+  bottom: 0;
 }
