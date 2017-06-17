@@ -6,12 +6,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
   resources :btc
-
-  # namespace :skills do
-  #   resources :front_end
-  # end
-
-  # get '/work_1', to: 'front_end#work_1'
-
+  resources :pins
   root 'posts#index'
 end

@@ -107,6 +107,8 @@ GEM
       activesupport (>= 4.1.0)
     google_currency (3.3.0)
       money (~> 6.7)
+    haml (4.0.7)
+      tilt
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.7.0)
@@ -255,6 +257,7 @@ DEPENDENCIES
   devise
   font-awesome-sass (~> 4.7.0)
   google_currency
+  haml (~> 4.0.5)
   jbuilder (~> 2.5)
   jquery-rails
   json
