@@ -7,11 +7,16 @@
       <% end %>
     </ul>
   <% end %>
+  <div class="form-group">
+    <%= f.input :image, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :title, input_html: { class: 'form-control'}  %>
+  </div>
 
-  <%= f.input :title %>
-<div class="content_input">
-  <%= f.input :description, label: "input pin"%>
-</div>
+  <div class="content_input">
+    <%= f.input :description, label: "input pin"%>
+  </div>
   <br>
   <%= f.submit "Submit", class: "btn btn-default", data: { disable_with: "Submitting..." } %>
   <% end %>

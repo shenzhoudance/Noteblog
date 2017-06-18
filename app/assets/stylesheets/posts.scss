@@ -46,8 +46,8 @@
   }
 
   .navbar-default{
-    height: 60px;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: white;
     i{
       color: $highlight;
@@ -55,7 +55,7 @@
     a{
       color: $dark;
     }
-    .navbar-nav,{
+    .navbar-nav{
       li{
          a{
           color: $dark;
