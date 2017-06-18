@@ -1,8 +1,15 @@
-<h1> <%= @pin.title %></h1>
-<p>
-  <%= @pin.description %>
-</p>
+<div class="container">
+  <h1> <%= @pin.title %></h1>
+  <p>
+    <%= @pin.description %>
+  </p>
 
-<%= link_to "Back", pins_path %>
-<%= link_to "Edit", edit_pin_path %>
-<%= link_to "Delete", pin_path, method: :delete, data: { confirm: "Ara you sure?" } %>
+  <p>
+    <%= @pin.user.email %>
+  </p>
+
+  <%= link_to "Back", pins_path %>
+  <%= link_to "Edit", edit_pin_path %>
+  <%= link_to "Delete", pin_path, method: :delete, data: { confirm: "Ara you sure?" } %>
+
+</div>
