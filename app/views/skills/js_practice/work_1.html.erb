@@ -1,9 +1,16 @@
-<h1>TravelWorthy</h1>
-<div id="info">
-  <h2>hotel facilities</h2>
-  <div id="hoteName"></div>
-  <div>
-    <p id="pool">Pool</p>
-    <p id="gym">Gym</p>
+<div class="container">
+  <p> 
+    <a id="my-click"> Click Me </a>
+  </p>
+  <hr>
+  <div id="foo">
+    <p>bar</p>
   </div>
 </div>
+
+
+<script>
+  $("#my-click").click(function(){
+    $("#foo").html('<h1>zoo</h1>')
+  })
+</script>
