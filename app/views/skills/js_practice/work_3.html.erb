@@ -1,0 +1,15 @@
+<div class="container">
+  <p>
+    <a id="my-toggle-click">Toggle</a>
+  </p>
+  <div id="foo">
+    <p>bar</p>
+  </div>
+</div>
+
+<script>
+  $("#foo").hide();
+  $("#my-toggle-click").hover(function(){
+    $("#foo").fadeToggle();
+  })
+</script>

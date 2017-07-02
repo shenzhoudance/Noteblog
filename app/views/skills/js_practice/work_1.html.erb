@@ -1,0 +1,16 @@
+<div class="container">
+  <p> 
+    <a id="my-click"> Click Me </a>
+  </p>
+  <hr>
+  <div id="foo">
+    <p>bar</p>
+  </div>
+</div>
+
+
+<script>
+  $("#my-click").click(function(){
+    $("#foo").html('<h1>zoo</h1>')
+  })
+</script>
