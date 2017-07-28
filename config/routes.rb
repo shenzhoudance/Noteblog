@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   resources :posts
   resources :btc
   resources :pins
-  root 'posts#index'
+  root 'welcome#index'
 end
