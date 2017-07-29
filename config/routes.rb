@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   devise_for :users
+  resources :design_works
   resources :posts
   resources :btc
   resources :pins

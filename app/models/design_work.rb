@@ -1,0 +1,2 @@
+class DesignWork < ApplicationRecord
+end
