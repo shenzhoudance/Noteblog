@@ -13,7 +13,7 @@ class DesignWorksController < ApplicationController
   def create
     @design_work = DesignWork.new(design_work_params)
     if @design_work.save
-      redirect_to @design_work
+      redirect_to design_works_path
     else
       render 'new'
     end
@@ -45,6 +45,6 @@ class DesignWorksController < ApplicationController
   end
 
   def design_work_params
-    params.require(:design_work).permit(:title, :description)
+    params.require(:design_work).permit(:title, :description, :image)
   end
 end
