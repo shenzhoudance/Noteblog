@@ -36,7 +36,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    render :js => "alert('OK');"
+    redirect_to posts_path
   end
 
   private
