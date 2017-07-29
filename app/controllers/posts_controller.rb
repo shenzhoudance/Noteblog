@@ -14,7 +14,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to @post, notice: "hellz yeah, Your article was successfully saved!"
+      redirect_to posts_path, notice: "hellz yeah, Your article was successfully saved!"
     else
       render 'new', notice: "Oh no, I was unable to save your post."
     end
