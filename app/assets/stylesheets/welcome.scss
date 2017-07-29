@@ -10,54 +10,9 @@
 .technology-article, .design-work, .programme-demo{
   display: inline-block;
   width: 30%;
+  border: 1px solid $light;
+  height: 200px;
+  a :hover{
+    border: 1px solid $highlight;
+  }
 }
-
-
-
-// .col-1, .col-2, .col-3 {
-//   float: left;
-// }
-//
-// .col-1 {
-//   width: 45%;
-//   padding: 0 5% 0 2.5%;
-// }
-//
-// .col-2, .col-3 {
-//   width: 27.5%;
-//   padding: 0 2.5%;
-// }
-//
-// .homepage_content {
-//   h2{
-//     font-size: 1.3rem;
-//     text-transform: uppercase;
-//   }
-//   h3 {
-//     font-size: 1.25em;
-//     font-weight: 400;
-//     margin-bottom: .5em;
-//   }
-//   a {
-//     text-decoration: none;
-//     color: #424652;
-//     &:hover {
-//       color: #8bc6db;
-//       text-decoration: none;
-//     }
-//   }
-//   .date {
-//     font-size: .85em;
-//     margin-bottom: 2em;
-//     color: $light;
-//   }
-//   p {
-//     margin: 0 0 .75em 0;
-//   }
-// }
-// .about {
-//   padding: 0 7.5% 0 0;
-//   a {
-//     color: $highlight;
-//   }
-// }

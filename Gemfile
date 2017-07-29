@@ -52,6 +52,8 @@ gem 'will_paginate'
 gem 'haml', '~> 4.0.5'
 gem 'paperclip', '~> 4.2.0'
 gem 'masonry-rails', '~> 0.2.1'
+gem "carrierwave"
+gem "mini_magick"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

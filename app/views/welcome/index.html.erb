@@ -1,11 +1,5 @@
-<div class="welcome-page">
-  <div class="technology-article">
-    <%= link_to "技术文章", posts_path %>
-  </div>
-  <div class="programme-demo">
-    编程小品
-  </div>
-  <div class="design-work">
-    <%= link_to "设计作品", pins_path %>
-  </div>
+<div class="welcome-page container">
+    <%= link_to "技术文章", posts_path, class: "technology-article" %>
+    <%= link_to "编程小品", programme_demos_path, class: "programme-demo" %>
+    <%= link_to "设计作品", pins_path, class: "design-work" %>
 </div>
