@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <%= link_to("图片库", pins_path) %>
+          <%= link_to("设计作品", design_works_path) %>
         </li>
         <li>
           <%= link_to("BTC & ETH", btc_index_path) %>
@@ -33,7 +33,7 @@
           <li><%= link_to("管理登入", new_user_session_path) %></li>
         <% else %>
           <li><%= link_to("写文章", new_post_path) %></li>
-          <li><%= link_to("加图片", new_pin_path) %></li>
+          <li><%= link_to("加图片", new_design_work_path) %></li>
           <li><%= link_to("Hi! Zeng | 登出", destroy_user_session_path, method: :delete) %></li>
         <% end %>
       </ul>

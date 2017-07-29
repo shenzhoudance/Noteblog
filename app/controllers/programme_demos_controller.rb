@@ -1,0 +1,2 @@
+class ProgrammeDemosController < ApplicationController
+end

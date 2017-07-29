@@ -10,8 +10,10 @@ Rails.application.routes.draw do
   end
 
   devise_for :users
+  resources :design_works
   resources :posts
   resources :btc
   resources :pins
-  root 'posts#index'
+  resources :programme_demos
+  root 'welcome#index'
 end
