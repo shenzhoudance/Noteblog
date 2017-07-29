@@ -3,15 +3,15 @@ class DesignWorksController < ApplicationController
   before_action :design_work_find_params_id, only: [:show, :edit, :update, :destroy]
 
   def index
-    # @design_works = Design_work.all
+    @design_works = DesignWork.all
   end
 
   def new
-    @design_work = Design_work.new
+    @design_work = DesignWork.new
   end
 
   def create
-    @design_work = Design_work.new(design_work_params)
+    @design_work = DesignWork.new(design_work_params)
     if @design_work.save
       redirect_to @design_work
     else
@@ -41,7 +41,7 @@ class DesignWorksController < ApplicationController
   private
 
   def design_work_find_params_id
-    @design_work = Design_work.find(params[:id])
+    @design_work = DesignWork.find(params[:id])
   end
 
   def design_work_params
