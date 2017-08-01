@@ -1,0 +1,57 @@
+@media (max-width:992px){
+  .technology-article,
+  .programme-demo,
+  .design-work{
+    padding-top: 65px;
+  }
+  .technology-article{
+    height: 230px;
+  }
+  .programme-demo{
+    height: 230px;
+  }
+  .design-work{
+    height: 230px;
+  }
+  .about-me{
+    height: 145px;
+  }
+}
+
+@media (min-width:992px){
+  .technology-article{
+    padding-top: 140px;
+    height: 380px;
+  }
+  .programme-demo{
+    padding-top: 65px;
+    height: 230px;
+  }
+  .design-work{
+    padding-top: 65px;
+    height: 230px;
+  }
+  .about-me{
+    height: 145px;
+  }
+}
+
+
+
+@media (min-width:1200px){
+  .technology-article{
+    padding-top: 170px;
+    height: 450px;
+  }
+  .programme-demo{
+    padding-top: 100px;
+    height: 300px;
+  }
+  .design-work{
+    padding-top: 100px;
+    height: 300px;
+  }
+  .about-me{
+    height: 145px;
+  }
+}
