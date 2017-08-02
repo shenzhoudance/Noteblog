@@ -3,16 +3,38 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap-setting";
-
 .welcome-page{
   margin-top: 50px;
+
+  .col-md-4,.col-md-8{
+    padding-left: 0px;
+    padding-right: 5px;
+    margin-top: 5px;
+  }
 }
-.technology-article, .design-work, .programme-demo{
-  display: inline-block;
-  width: 30%;
-  border: 1px solid $light;
-  height: 200px;
-  a :hover{
-    border: 1px solid $highlight;
+
+.technology-article,
+.programme-demo,
+.design-work,
+.about-me{
+  background-color: #333333;
+}
+
+.about-me{
+  font-size: 14px;
+  color: #fff;
+
+  .social-profiles{
+    position: absolute;
+    bottom: 10px;
+    span{
+      margin-right: 10px;
+    }
+  }
+
+  .my-message{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
   }
 }
