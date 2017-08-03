@@ -1,13 +1,17 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <% @posts.each do |post| %>
-        <p class="date text-center"><%= post.created_at.strftime('%A, %B %d') %></p>
-        <h2 class="text-center"><%= link_to(post.title, post_path(post)) %></h2>
-        <hr class="small">
-        <p><%= markdown post.content %></p>
-      <br>
-      <% end %>
-    </div>
+<div class="container posts-controller-index">
+  <div class="col-md-3 posts-left-sidebar">
+    <% @posts.each do |post| %>
+      <h5><%= link_to(post.title, post_path(post)) %></h5>
+    <% end %>
+  </div>
+  <div class="col-md-9 post-content">
+    <% @posts.each do |post| %>
+      <h2><%= link_to(post.title, post_path(post)) %></h2>
+      <hr>
+
+      <span class="date pull-left"><%= post.created_at.strftime('%A, %B %d') %></span>
+      <p><%= markdown post.content %></p>
+    <br><br><br>
+    <% end %>
   </div>
 </div>
