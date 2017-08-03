@@ -8,10 +8,10 @@
 
 .posts-controller{
   /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
-  min-height: 100%;
+  // min-height: 100%;
   /* 位置設為relative, 作為footer區塊位置的參考 */
-  position: relative;
-  padding-bottom: 70px;
+  // position: relative;
+  // padding-bottom: 70px;
 
 // posts 全局
   h1, h2, p, ul, li {
