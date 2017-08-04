@@ -3,19 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.design-works-content{
-  background-color: #f4f4f4;
-  height: 100%;
-  .design-works-box{
-    margin-top: 30px;
-  }
+.design-works-controller{
+  // TODO:需要refactor navbar 之后再添加颜色
+  // background-color: #f4f4f4;
+  // height: 100%;
+}
 
-  .design-works-image{
-    border: 10px solid #ffffff;
-    box-shadow: 0 2px 4px 0 #EFEFEF;
-    border-radius: 3px;
-    img{
-      max-width: 100%;
-    }
+.design-works-box{
+  margin-top: 30px;
+}
+
+.design-works-image{
+  border: 10px solid #ffffff;
+  box-shadow: 0 2px 4px 0 #EFEFEF;
+  border-radius: 3px;
+  img{
+    max-width: 100%;
   }
 }
