@@ -1,13 +1,36 @@
-<div class="container">
-  <br>
-  <br>
-  <div>
-    <% @design_works.each do |design_work| %>
-      <div class="col-md-3">
-        <%= link_to design_work_path(design_work) do %>
-            <%= image_tag(design_work.image.thumb.url, class: "thumbnail") %>
-        <% end %>
+<div class="design-works-content">
+  <div class="container">
+    <div class="col-md-4 col-sm-6 col-xs-12 design-works-box">
+      <div class="design-works-image">
+        <img src="https://cdn.dribbble.com/users/4598/screenshots/3706929/toucan.jpg" alt="">
       </div>
-    <% end %>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 design-works-box">
+      <div class="design-works-image">
+        <img src="https://cdn.dribbble.com/users/116499/screenshots/3709271/rapha_greg.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 design-works-box">
+      <div class="design-works-image">
+        <img src="https://cdn.dribbble.com/users/60166/screenshots/3708858/j_symbol.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12 design-works-box">
+      <div class="design-works-image">
+        <img src="https://cdn.dribbble.com/users/2489/screenshots/3708863/duck.png" alt="">
+      </div>
+    </div>
+    <%# @design_works.each do |design_work| %>
+    <!-- <div class="col-md-4 col-sm-6 col-xs-12 design-works-box">
+      <div class="design-works-image"> -->
+
+          <%#= link_to design_work_path(design_work) do %>
+              <%#= image_tag(design_work.image.url) %>
+          <%# end %>
+
+      <!-- </div>
+    </div> -->
+  <%# end %>
+
   </div>
 </div>
