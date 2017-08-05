@@ -64,6 +64,17 @@
   background-color: $dark;
 }
 
+.technology-article,
+.programme-demo,
+.design-work{
+  a{
+    img{
+  width: 200;
+      height: 100;
+    }
+  }
+}
+
 .about-me{
   font-size: 14px;
   color: #fff;
