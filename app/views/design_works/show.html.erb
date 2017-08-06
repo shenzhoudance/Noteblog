@@ -1,0 +1,7 @@
+<div class="container">
+  <%= image_tag(@design_work.image.url) %>
+  <div class="text-left">
+    <%= link_to "编辑", edit_design_work_path(@design_work), class: "btn btn-default" %>
+    <%= link_to "删除", design_work_path(@design_work), class: "btn btn-default", method: :delete %>
+  </div>
+</div>
