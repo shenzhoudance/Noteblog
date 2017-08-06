@@ -4,6 +4,12 @@
   .login{
     display: none;
   }
+
+  .one-word-navbar{
+    padding-top: 80px;
+    padding-bottom:60px;
+  }
+
   .mobile-navbar{
     width: 100%;
     height: 60px;
@@ -31,5 +37,10 @@
 @media (min-width: 768px){
   .mobile-navbar{
     display: none;
+  }
+
+  .one-word-navbar{
+    padding-top: 60px;
+    padding-bottom:60px;
   }
 }
