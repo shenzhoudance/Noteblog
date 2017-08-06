@@ -1,32 +1,11 @@
-<div class="container">
-  <div class="mobile-navbar text-center navbar-fixed-top navbar-default">
-      <span><%= link_to "首页", root_path %></span>
-      <span><%= link_to "技术文章", posts_path %></span>
-      <span><%= link_to "编程习作", programme_demos_path %></span>
-      <span><%= link_to "设计习作", design_works_path %></span>
-      <% if !current_user %>
-        <span><%= link_to("登入", new_user_session_path) %></span>
-      <% else %>
-      <span><a href="#">后台</a></span>
-        <!-- <span><%#= link_to("写文章", new_post_path) %></span>
-        <span><%#= link_to("加图片", new_design_work_path) %></span>
-        <span><%#= link_to("登出", destroy_user_session_path, method: :delete) %></span> -->
-      <% end %>
-  </div>
-</div>
+<%= render "common/mobile_navbar" %>
 
-<div class="welcome-page-navbar">
+<div class="one-word-navbar">
   <div class="navbar-logo pull-left"></div>
   <div class="container navbar-content">
-    <span class="welcome-one-word">记录，让错误与无知不再重复</span>
-    <div class="login pull-right">
-      <span><%= link_to "首页", root_path %></span>
-      <span><%= link_to "技术文章", posts_path %></span>
-      <span><%= link_to "编程习作", programme_demos_path %></span>
-      <span><%= link_to "设计习作", design_works_path %></span>
-      <span><%= link_to "登入", new_user_session_path %></span>
-    </div>
+    <span class="one-word">记录，让错误与无知不再重复</span>
+    <%= render "common/right_navbar" %>
     <hr>
-    <span class="welcome-one-word-english">Nothing in life is to be feared, it is only to be understood.</span>
+    <span class="one-word-english">Nothing in life is to be feared, it is only to be understood.</span>
   </div>
 </div>
