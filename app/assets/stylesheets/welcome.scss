@@ -4,11 +4,13 @@
 
 @import "bootstrap-setting";
 
+
+
 .welcome-page-navbar{
   position: relative;
   width: 100%;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom:60px;
 
   .navbar-logo{
     margin-top:4px;
@@ -42,8 +44,14 @@
       left: 15px;
       color: $light;
     }
-    span.login{
-      color: $light;
+    .login{
+      padding-top: 5px;
+      span{
+        a{
+          margin-left: 20px;
+          color: $light;
+        }
+      }
     }
   }
 }
