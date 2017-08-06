@@ -6,7 +6,13 @@
       <span><%= link_to "技术文章", posts_path %></span>
       <span><%= link_to "编程习作", programme_demos_path %></span>
       <span><%= link_to "设计习作", design_works_path %></span>
-      <span><%= link_to "登入", new_user_session_path %></span>
+      <% if !current_user %>
+        <li><%= link_to("管理登入", new_user_session_path, class:"span") %></li>
+      <% else %>
+        <li><%= link_to("写文章", new_post_path, class:"span") %></li>
+        <li><%= link_to("加图片", new_design_work_path, class:"span") %></li>
+        <li><%= link_to("Hi! Zeng | 登出", destroy_user_session_path, method: :delete, class:"span") %></li>
+      <% end %>
     </div>
     <hr>
     <span class="welcome-one-word-english">Nothing in life is to be feared, it is only to be understood.</span>
