@@ -1,14 +1,11 @@
-<div class="welcome-page-navbar">
+<%= render "common/mobile_navbar" %>
+
+<div class="one-word-navbar">
   <div class="navbar-logo pull-left"></div>
   <div class="container navbar-content">
-    <span class="welcome-one-word">编程习作、框架、组件</span>
-    <div class="login pull-right">
-      <span><%= link_to "技术文章", posts_path %></span>
-      <span><%= link_to "编程习作", programme_demos_path %></span>
-      <span><%= link_to "设计习作", design_works_path %></span>
-      <span><%= link_to "登入", new_user_session_path %></span>
-    </div>
+    <span class="one-word">编程习作、框架、组件</span>
+    <%= render "common/right_navbar" %>
     <hr>
-    <span class="welcome-one-word-english">Framework</span>
+    <span class="one-word-english">Framework & Building block</span>
   </div>
 </div>

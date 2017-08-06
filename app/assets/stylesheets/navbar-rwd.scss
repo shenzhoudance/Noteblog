@@ -1,0 +1,46 @@
+@import "bootstrap-setting";
+
+@media (max-width: 768px){
+  .login{
+    display: none;
+  }
+
+  .one-word-navbar{
+    padding-top: 80px;
+    padding-bottom:60px;
+  }
+
+  .mobile-navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+    span{
+      width: 20%;
+      float: left;
+      padding-top: 20px;
+      a{
+        color: $light;
+      }
+    }
+  }
+  .welcome-page-navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+    .mobile-navbar{
+      border-top: 3px solid #333333;
+      border-bottom: 0.5px solid $border-color;
+      background-color: #ffffff;
+      height: 60px;
+    }
+  }
+}
+@media (min-width: 768px){
+  .mobile-navbar{
+    display: none;
+  }
+
+  .one-word-navbar{
+    padding-top: 60px;
+    padding-bottom:60px;
+  }
+}

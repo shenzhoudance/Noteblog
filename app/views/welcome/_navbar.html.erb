@@ -1,9 +1,24 @@
-<div class="welcome-page-navbar">
+<div class="container welcome-page-navbar">
+  <div class="mobile-navbar text-center navbar-fixed-top">
+      <span><%= link_to "Logo", root_path %></span>
+  </div>
+</div>
+
+<div class="one-word-navbar">
   <div class="navbar-logo pull-left"></div>
   <div class="container navbar-content">
-    <span class="welcome-one-word">据说程序员的前世是魔术师</span>
-    <span class="login pull-right">login</span>
+    <span class="one-word">据说程序员的前世是魔术师</span>
+
+    <div class="login pull-right">
+      <% if !current_user %>
+        <span><%= link_to("LOGIN", new_user_session_path) %></span>
+      <% else %>
+        <span><%= link_to("写文章", new_post_path) %></span>
+        <span><%= link_to("加图片", new_design_work_path) %></span>
+        <span><%= link_to("Hi! Zeng | 登出", destroy_user_session_path, method: :delete) %></span>
+      <% end %>
+    </div>
     <hr>
-    <span class="welcome-one-word-english">Software development is the process of making impossible possible</span>
+    <span class="one-word-english">Software development is the process of making impossible possible</span>
   </div>
 </div>

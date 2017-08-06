@@ -4,51 +4,7 @@
 
 @import "bootstrap-setting";
 
-.welcome-page-navbar{
-  position: relative;
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  .navbar-logo{
-    margin-top:4px;
-    height: 25px;
-    width: 20%;
-
-    background-color: $dark;
-    margin-right: 20px;
-  }
-  .navbar-content{
-    position: relative;
-    span.welcome-one-word{
-      z-index: 1;
-      background-color: #fff;
-      font-size: 24px;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      padding-left: 15px;
-    }
-    hr{
-      margin-top: 50px;
-      position:absolute;
-      left: 15px;
-      width: 40px;
-      border-top: 1px solid $dark;
-    }
-    span.welcome-one-word-english{
-      margin-top: 70px;
-      position:absolute;
-      left: 15px;
-      color: $light;
-    }
-    span.login{
-      color: $light;
-    }
-  }
-}
 .welcome-page{
-  margin-top: 100px;
 
   .col-md-4,.col-md-8{
     padding-left: 0px;
