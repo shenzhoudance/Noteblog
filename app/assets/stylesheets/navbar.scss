@@ -1,20 +1,21 @@
 @import "bootstrap-setting";
 
-.one-word-navbar{
+.one-word-navbar {
   position: relative;
   width: 100%;
 
-  .navbar-logo{
-    margin-top:4px;
-    height: 25px;
-    width: 20%;
-
-    background-color: $dark;
-    margin-right: 20px;
-  }
-  .navbar-content{
+  // .navbar-logo{
+  //   margin-top:4px;
+  //   height: 25px;
+  //   width: 20%;
+  //
+  //   background-color: $dark;
+  //   margin-right: 20px;
+  // }
+  .navbar-content {
     position: relative;
-    span.one-word{
+
+    span.one-word {
       z-index: 1;
       background-color: #fff;
       font-size: 24px;
@@ -23,26 +24,31 @@
       left: 0px;
       padding-left: 15px;
     }
-    span.design-work-word{
+
+    span.design-work-word {
       background-color: #f4f4f4;
     }
-    hr{
+
+    hr {
       margin-top: 50px;
-      position:absolute;
+      position: absolute;
       left: 15px;
       width: 40px;
       border-top: 1px solid $dark;
     }
-    span.one-word-english{
+
+    span.one-word-english {
       margin-top: 70px;
-      position:absolute;
+      position: absolute;
       left: 15px;
       color: $light;
     }
-    .login{
+
+    .login {
       padding-top: 5px;
-      span{
-        a{
+
+      span {
+        a {
           margin-left: 20px;
           color: $light;
         }
