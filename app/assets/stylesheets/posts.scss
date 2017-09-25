@@ -2,50 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 @import "bootstrap-setting";
 
-
-.posts-left-sidebar{
-  h5{
-    a{
+.posts-left-sidebar {
+  h5 {
+    a {
       margin-left: -15px;
       color: $dark;
       text-decoration: none;
     }
-    a:hover{
+
+    a:hover {
       color: $highlight;
     }
   }
 }
 
-.post-content{
-
-  h2{
+.post-content {
+  h2 {
     margin-top: 0px;
-    a{
+
+    a {
       color: $dark;
       text-decoration: none;
     }
-    a:hover{
+
+    a:hover {
       color: $highlight;
     }
   }
-  hr{
+
+  hr {
     width: 40px;
     margin: 10px auto;
     border-width: 1px;
     border-color: $dark;
     float: left;
   }
-  span.date{
+
+  span.date {
     clear: both;
     margin-bottom: 35px;
     color: $light;
   }
-  p{
+
+  p {
     clear: both;
     margin: 0;
     line-height: 1.8;
   }
+}
+
+.content_input {
+  min-height: 400px;
 }
